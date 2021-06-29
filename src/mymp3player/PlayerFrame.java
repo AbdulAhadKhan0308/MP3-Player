@@ -45,17 +45,17 @@ public class PlayerFrame extends javax.swing.JFrame {
         // Set App Title Here
         appTitle.setText(appName);
         
-        // Here I am going to set a default song file. It's not necessary.
+        
         songFile = new File("C:\\Users\\ABDUL AHAD KHAN\\Downloads\\Queen-Killer-Queen.mp3");
         
-        // Now make a string to get file name
+       
         String fileName = songFile.getName();
         // Here set our song name label with this name
         songNameDisplay.setText(fileName);
         
-        // Add our method to player variable
+        
         player = mp3Player();
-        // Now add song to player as playlist.
+        
         player.addToPlayList(songFile);
         
         // Here get current path and images path in strings
